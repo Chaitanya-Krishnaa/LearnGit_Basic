@@ -1,0 +1,76 @@
+STEP 3: HERE AFTER CHANGING lines in .txt FILE - DOING COMMIT
+--------------------------------------------------------------
+chait@LAPTOP-PHDIV8KJ MINGW64 /n/LearnGit_Basic (main)
+$ git commit -m "Added few lines from LearnGit_Basic Folder"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gitbasics.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+******
+NOTE: HERE YOU NEED TO CHECK were "modified:   gitbasics.txt" in RED COLOR means it was Modified State only
+So Basically git follow 3 steps: MODIFIED->STAGED->Commit(snapshot)
+**********************************************************************
+
+Now:
+Below Showing git remote version to check what is fetch and push 
+-------------------------------------------------------------------
+chait@LAPTOP-PHDIV8KJ MINGW64 /n/LearnGit_Basic (main)
+$ git remote -v
+origin  https://github.com/Chaitanya-Krishnaa/LearnGit_Basic.git (fetch)
+origin  https://github.com/Chaitanya-Krishnaa/LearnGit_Basic.git (push)
+
+STEP 2: BASICALLY WE ADD FILES -after git clone URL step ->Then we follow below step
+--------------------------------------------------------------------------------
+chait@LAPTOP-PHDIV8KJ MINGW64 /n/LearnGit_Basic (main)
+$ git add .
+
+STEP 4: Check Status whether is showing GREEN COLOR below "modified:   gitbasics.txt" (means in Staged state)
+-------------------------------------------------------------------------------------------------------------- 
+chait@LAPTOP-PHDIV8KJ MINGW64 /n/LearnGit_Basic (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   gitbasics.txt
+
+STEP 5: Do commit for whatever changes we do in files , adding message in "Add message here" like this
+Then Check GIT STATUS - from git status we can Branch name ex: below it is shows 'origin/main'
+-------------------------------------------------------------------------------------------------------
+chait@LAPTOP-PHDIV8KJ MINGW64 /n/LearnGit_Basic (main)
+$ git commit -m "so after git adding then status then commit then push"
+[main 768cb07] so after git adding then status then commit then push
+ 1 file changed, 3 insertions(+)
+
+
+chait@LAPTOP-PHDIV8KJ MINGW64 /n/LearnGit_Basic (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+*STEP 6: Main Step to Push Code to main branch , it will reflect in GitHub Page after commit & push it
+-------------------------********----------------------------------------------------------------------
+
+chait@LAPTOP-PHDIV8KJ MINGW64 /n/LearnGit_Basic (main)
+$ git push origin main
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 403 bytes | 403.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Chaitanya-Krishnaa/LearnGit_Basic.git
+   c10b683..768cb07  main -> main
+
+
