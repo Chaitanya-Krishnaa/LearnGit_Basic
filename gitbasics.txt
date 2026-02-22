@@ -1,3 +1,6 @@
 Hello
 Learn Git Basics 
 Today I want to Learn Basics of Git(Version Control System)
+So First Step is:
+git init
+We have initiaalize before cloning the URL
